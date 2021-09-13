@@ -98,6 +98,12 @@ body {
   border: 3px solid white;
   border-radius: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .profile img {
+    width: 80px;
+    margin-bottom: 30px;
+  }
+}
 .profile div p {
   color: white;
   opacity: 0.6;
@@ -208,6 +214,8 @@ body {
   padding: 30px;
   position: relative;
   top: -40px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .activityInfo .topLevel, .activityInfo .bottomLevel {
   color: white;
@@ -253,6 +261,10 @@ body {
     width: 250px;
     height: 200px;
   }
+}
+.activityInfo:hover {
+  background-color: #444899;
+  cursor: pointer;
 }
 
 .work {

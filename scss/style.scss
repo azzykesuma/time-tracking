@@ -74,6 +74,11 @@ body {
         width : 50px;
         border: 3px solid white;
         border-radius: 50px;
+
+        @include mQ(1200px) {
+            width : 80px;
+            margin-bottom: 30px;
+        }
     }
 
     div {
@@ -171,6 +176,7 @@ body {
     padding : 30px;
     position: relative;
     top : -40px;
+    transition: 0.3s ease-in-out;
 
     .topLevel, .bottomLevel {
         color : white;
@@ -206,6 +212,10 @@ body {
         height : 200px;
     }
 
+    &:hover {
+        background-color: #444899;
+        cursor: pointer;
+    }
 }
 .work {
     background-color: $Lightred;
